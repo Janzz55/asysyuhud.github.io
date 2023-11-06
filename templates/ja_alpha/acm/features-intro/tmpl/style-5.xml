@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <title>Features Intro Style 5</title>
+	<sampledata></sampledata>
+	<fields name="features-intro">
+		<fieldset name="basic" label="FEATURES_BASIC_LABEL" description="FEATURES_BASIC_DESC">
+			<field name="ft-color" type="list" label="FEATURES_BACKGROUND_COLOR_LABEL" description="FEATURES_BACKGROUND_COLOR_DESC" default="primary" >
+				<option value="primary">Primary</option>
+				<option value="secondary">Secondary</option>
+				<option value="success">Success</option>
+				<option value="info">Info</option>
+				<option value="warning">Warning</option>
+				<option value="danger">Danger</option>
+				<option value="dark">Dark</option>
+			</field>
+			
+			<field name="description" type="textarea" default="" label="FEATURES_DESCRIPTION_LABEL" description="FEATURES_DESCRIPTION_DESC" rows="5" cols="40" filter="raw"/>
+
+			<field name="img-features" type="media" default="" label="FEATURES_BACKGROUND_LABEL" description="FEATURES_BACKGROUND_DESC" required="1"></field>
+
+			<field name="btn-title" type="text" default="" label="FEATURES_BUTTON_TITLE_LABEL" description="FEATURES_BUTTON_TITLE_DESC" />
+
+			<field name="btn-link" type="text" default="" label="FEATURES_BUTTON_LINK_LABEL" description="FEATURES_BUTTON_LINK_DESC" />
+		</fieldset>
+
+		<fieldset name="section-features" label="FEATURES_SECTION_LABEL" description="FEATURES_SECTION_DESC">
+			<field name="data" type="jalist" >
+				<item name="ft-num" type="text" default="" size="40" label="FEATURES_NUMBER_LABEL" description="FEATURES_NUMBER_DESC" required="1" />
+				<item name="ft-title" type="text" default="" size="40" label="FEATURES_TITLE_LABEL" description="FEATURES_TITLE_DESC" />
+				<item name="ft-description" type="textarea" default="" label="FEATURES_DESCRIPTION_LABEL" description="FEATURES_DESCRIPTION_DESC" rows="5" cols="40" />
+			</field>
+
+		</fieldset>
+  </fields>
+</form>

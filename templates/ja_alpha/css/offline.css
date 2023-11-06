@@ -1,0 +1,106 @@
+/**
+ * ------------------------------------------------------------------------
+ * JA Alpha Template
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2018 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+ * @license - Copyrighted Commercial Software
+ * Author: J.O.O.M Solutions Co., Ltd
+ * Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+ * This file may not be redistributed in whole or significant part.
+ * ------------------------------------------------------------------------
+*/
+
+/*Global Style*/
+html {
+  font-size: 15px;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0;
+  padding: 30px;
+  position: relative;
+  min-height: 100vh;
+}
+
+@media (max-height: 1200px) {
+  body {
+    justify-content: flex-start;
+  }
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Box wrap*/
+.outline {
+  border-radius: 0;
+  margin: auto;
+  max-width: 100%;
+  width: 400px;
+}
+
+.outline h1 {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-top: 0;
+  text-align: center;
+}
+
+.outline p.message {
+  text-align: center;
+  margin: 0 0 30px 0;
+}
+
+
+/*Form Group*/
+.input > p {
+  margin: 0 0 20px 0;
+}
+
+#form-login fieldset {
+  border: 0;
+  padding: 0;
+}
+
+.form-control, .inputbox {
+  max-width: 100%;
+  width: 100%;
+}
+
+
+#form-login-remember {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+#form-login-remember input {
+  margin-right: 0.5rem;
+  height: auto;
+}
+
+#form-login-remember label {
+  margin: 0;
+}
+
+/*Mobile view*/
+@media (max-width: 767px) {
+  body {
+    display: block;
+  }
+}

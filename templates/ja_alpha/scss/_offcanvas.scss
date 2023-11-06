@@ -1,0 +1,171 @@
+//
+// OFF-CANVAS CONTENT STYLES
+// -------------------------------------
+// Extend style in base
+// --------------------
+@import "../../../plugins/system/t4/themes/base/scss/_offcanvas";
+
+// Offcanvas toggle
+// -----------------------------------
+.t4-offcanvas-toggle {
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: static;
+  right: 0;
+  top: 0;
+  padding: 0;
+  height: 61px;
+  width: 40px;
+  transition: all 0.35s;
+
+  .toggle-bars {
+    background-color: $headings-color;
+    border-radius: 0;
+    display: block;
+    height: 2px;
+    position: relative;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    left: 0;
+    width: 15px;
+
+    &:before,
+    &:after {
+      background-color: $headings-color;
+      border-radius: 0;
+      content: "";
+      display: block;
+      height: 2px;
+      position: absolute;
+      top: -6px;
+      left: 0;
+      width: 100%;
+    }
+
+    &:after {
+      bottom: -6px;
+      top: auto;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    .toggle-bars,
+    .toggle-bars:before,
+    .toggle-bars:after {
+      background-color: $gray-900;
+    }
+  }
+}
+
+
+.t4-offcanvas {
+
+  // Off Canvas Header
+  // -----------------------------------
+  .t4-off-canvas-header {
+    padding-left: $grid-gutter-width;
+    
+    h3 {
+     color: $t4-off-canvas-header-text-color;
+     font-size: $h5-font-size;
+     font-weight: 600;
+     text-transform: uppercase;
+    }
+
+    .close {
+      color: $t4-off-canvas-header-text-color; 
+    }
+  }
+
+  // Off Canvas Body
+  // -----------------------------------  
+  .t4-off-canvas-body {
+    height: calc(100% - 50px);
+    overflow-y: auto;
+    padding: $grid-gutter-width;
+
+    .module-title {
+      border-bottom-color: rgba(255,255,255,0.05);
+
+      span {
+        border: 0;
+        color: $t4-off-canvas-text-color;
+      }
+    }
+
+    .t4-module .module-inner {
+      padding: 0;
+    }
+
+    // Nav bar
+    .navbar {
+      .nav-link,
+      .separator {
+        color: $t4-off-canvas-link-color;
+
+        &:hover, &:focus, &:active {
+          background: transparent;
+          color: $t4-off-canvas-link-hover-color;
+        }
+      }
+
+      // Dropdown menu
+      .dropdown-menu {
+        background: transparent;
+
+        .dropdown-item,
+        .nav-link {
+          color: $t4-off-canvas-link-color;
+          padding: 0.5rem 0.5rem 0.5rem 1rem;
+
+          &:hover,&:focus,&:active {
+            background: transparent;
+            color: $t4-off-canvas-link-hover-color;
+          }
+        }
+      }
+
+      .dropdown-toggle:after {
+        margin-top: 11px;
+      }
+
+      // Active
+      &,.dropdown-menu {
+        .active {
+          > a,
+          > span {
+            color: $t4-off-canvas-link-hover-color;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+
+    // Card Style
+    .t4-card {
+      background: transparent;
+      border-color: rgba(255,255,255,0.1);
+
+      .card-header {
+        border-color: rgba(255,255,255,0.1);
+        color: $t4-off-canvas-header-text-color;
+      }
+
+      // Dropdown menu
+      .dropdown-menu {
+        .dropdown-item,
+        .nav-link {
+          padding: 0.5rem 0.5rem 0.5rem 1rem;
+        }
+      }
+
+      .nav li {
+        max-width: 100%;
+      }
+    }
+  }
+}

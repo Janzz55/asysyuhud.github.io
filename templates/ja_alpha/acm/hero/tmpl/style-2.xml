@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+  <title>Hero Intro 2</title>
+	<sampledata></sampledata>
+	<fields name="hero-intro">
+		<fieldset name="basic" label="HERO_BASIC_LABEL" description="HERO_BASIC_DESC">
+			<field name="ft-bg" type="media" default="" label="HERO_BACKGROUND_LABEL" description="HERO_BACKGROUND_DESC" required="1" />
+
+			<field name="ft-color" type="list" label="FEATURES_BACKGROUND_COLOR_LABEL" description="FEATURES_BACKGROUND_COLOR_DESC" default="primary" >
+				<option value="primary">Primary</option>
+				<option value="secondary">Secondary</option>
+				<option value="success">Success</option>
+				<option value="info">Info</option>
+				<option value="warning">Warning</option>
+				<option value="danger">Danger</option>
+				<option value="dark">Dark</option>
+			</field>
+
+
+			<field name="description" type="textarea" default="" label="HERO_DESCRIPTION_LABEL" description="HERO_DESCRIPTION_DESC" rows="5" cols="40" />
+
+			<field name="id-video" type="text" default="" label="HERO_ID_VIDEO_LABEL" description="HERO_ID_VIDEO_DESC" rows="5" cols="40" />
+		</fieldset>
+
+		<fieldset name="basic-2" label="HERO_ACTIONS_LABEL" description="HERO_ACTIONS_DESC">
+			<field name="ft-reviews" type="textarea" default="" label="HERO_REVIEWS_TITLE_LABEL" description="HERO_REVIEWS_TITLE_DESC" />
+			<field name="ft-cta-sub" type="textarea" default="" label="HERO_CTA_SUB_LABEL" description="HERO_CTA_SUB_DESC" />
+			<field name="ft-cta-title" type="textarea" default="" label="HERO_CTA_TITLE_LABEL" description="HERO_CTA_TITLE_DESC"/>
+
+			<field name="ft-btn-link" type="text" default="" label="HERO_BUTTON_LINK_LABEL" description="HERO_BUTTON_LINK_DESC"/>
+			<field name="ft-btn-title" type="text" default="" label="HERO_BUTTON_TITLE_LABEL" description="HERO_BUTTON_TITLE_DESC"/>
+		</fieldset>
+  </fields>
+</form>

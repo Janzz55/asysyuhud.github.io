@@ -1,0 +1,121 @@
+// ------------------------------------
+// Core Styles
+// ------------------------------------
+
+// Body
+// -------------------------
+html {
+  font-size: $font-size-root;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+body {
+  font-weight: $font-weight-base;
+}
+
+div.t4-verticle-lines {
+  bottom: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+
+  .line-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .line-item {
+    background: rgba(0,0,0,0.03);
+    height: 100vh;
+    width: 1px;
+
+    // Mobile view
+    @include media-breakpoint-down(sm) {
+      &.line-2,
+      &.line-4 {
+        display: none;
+      }
+    }
+  }
+}
+
+// Links
+// -------------------------
+a {
+  color: $link-color;
+
+  @include hover {
+    color: $link-hover-color;
+  }
+}
+
+
+// Images
+// -------------------------
+img {
+  @include img-fluid;
+}
+
+
+// Forms
+// -------------------------
+
+// Legacy Joomla! Form Elements
+.control-group {
+  @extend .form-group;
+}
+
+.inputbox {
+  @extend .form-control;
+}
+
+input[type=radio],
+input[type=checkbox] {
+
+  &.inputbox,
+  &.form-control {
+    width: auto;
+  }
+}
+
+.radio,
+.checkbox {
+  @extend .form-check;
+  input[type=radio],
+  input[type=checkbox] {
+    margin-right: $spacer-xs;
+  }
+}
+
+label.radio,
+label.checkbox {
+  @extend .form-check-inline;
+}
+
+
+//
+// MISC.
+// --------------------------------------------------
+
+hr {
+}
+
+.badge-secondary {
+  color: $white;
+}
+
+/* IcoMoon Conversion */
+[class^="icon-"].input-group-text,
+[class*=" icon-"].input-group-text {
+  width: auto;
+  height: auto;
+}
+
+[class^="icon-"].fa::before,
+[class*=" icon-"].fa::before {
+  font-family: FontAwesome;
+}

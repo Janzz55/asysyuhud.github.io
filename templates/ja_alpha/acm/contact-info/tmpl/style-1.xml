@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+    <title>Contact Info</title>
+	<sampledata></sampledata>
+	<fields name="social-intro">
+		<fieldset name="section-social" label="CONTACT_SECTION_LABEL" description="CONTACT_SECTION_DESC" multiple="1">
+				<field name="ct-label" type="text" default="" label="CONTACT_LABEL_LABEL" description="CONTACT_LABEL_DESC" />
+				<field name="title" type="text" default="" size="40" label="CONTACT_TITLE_LABEL" description="CONTACT_TITLE_DESC" />
+				<field name="link" type="text" default="" label="CONTACT_LINK_LABEL" description="CONTACT_LINK_DESC" rows="5" cols="40" required="1"/>
+		</fieldset>
+		
+  </fields>
+</form>

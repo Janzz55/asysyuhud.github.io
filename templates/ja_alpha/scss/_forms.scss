@@ -1,0 +1,75 @@
+// ------------------------------------
+// FORMS
+// ------------------------------------
+
+// Extend style in base
+// --------------------
+@import "../../../plugins/system/t4/themes/base/scss/_forms";
+
+// 
+// Button
+// -----------------------------------
+.btn {
+  // Mobile view
+  @include media-breakpoint-down(sm) {
+    padding: 0.7rem 1rem;
+  }
+}
+
+.btn-link {
+  font-weight: 600;
+}
+
+.btn.btn.btn-outline-white {
+	&:hover {
+		color: $headings-color!important;
+	}
+}
+
+.btn-group {
+	flex-wrap: wrap;
+}
+
+// 
+// Textual form controls
+// -----------------------------------
+.form-control {
+
+}
+
+.control-label {  
+  .form-control-feedback {
+  }
+}
+
+form.form-horizontal {
+  .control-group {
+    // Mobile view
+    @include media-breakpoint-down(sm) {
+      div.control-label {
+        float: none;
+      }
+
+      div.controls {
+        margin-left: 0;
+      }
+    }
+  }
+}
+
+// 
+// Input group
+// ---------------------------
+.input-group-addon {
+  > span {
+  }
+}
+
+
+// 
+// Btn Toolbar
+// --------------------------
+.btn-toolbar {
+  .btn-group + .btn-group {
+  }
+}

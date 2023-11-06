@@ -1,0 +1,128 @@
+/**
+ * ------------------------------------------------------------------------
+ * JA Alpha Template
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2018 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+ * @license - Copyrighted Commercial Software
+ * Author: J.O.O.M Solutions Co., Ltd
+ * Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+ * This file may not be redistributed in whole or significant part.
+ * ------------------------------------------------------------------------
+*/
+
+
+/* MAIN STYLE
+---------------------*/
+html {
+  font-size: 15px;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+  background: #FFF7F5;
+  color: #585858;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: Archivo, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.875;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* OutLine */
+#outline {
+  display: flex;
+	text-align: center;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+/* Eror Code */
+.error-code {
+  color: #2E2E2E;
+  display: inline-block;
+  font-size: 22rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 30px;
+}
+
+
+/* Message Error */
+.error-message {
+}
+
+/* Message Error */
+.error-message h2 {
+	color: #2E2E2E;
+  display: inline-block;
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  margin-top: 0;
+  position: relative;
+}
+
+.error-message h2 span {
+  position: relative;
+  z-index: 3;
+}
+
+
+#errorboxbody p {
+	display: block;
+	margin: 0 0 20px;
+	z-index: 3;
+	position: relative;
+  opacity: 0.8;
+}
+
+/* Button Home */
+.button-home {
+  background: transparent;
+  border: 2px solid #EC4E4F;
+  color: #EC4E4F;
+  border-radius: 0;
+  display: inline-block;
+  padding: 1rem 3rem;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.7;
+  text-decoration: none;
+}
+
+
+.button-home:hover,
+.button-home:focus,
+.button-home:active {
+  background: #EC4E4F;
+  color: #fff;
+}
+
+/*Mobile view*/
+@media (max-width: 767px){
+  #outline {
+    padding: 30px 0;
+  }
+
+	/* Eror Code */
+	.error-code {
+	  font-size: 10rem;
+	}
+
+	/* Message Error */
+	.error-message {
+	}
+
+	/* Message Error */
+	.error-message h2 {
+	  font-size: 1.5rem;
+	}
+}

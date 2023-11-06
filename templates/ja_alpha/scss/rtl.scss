@@ -1,0 +1,48 @@
+// Function, variables
+@import "vars";
+
+// For template rtl style
+.acm-testimonial.style-1 .owl-carousel .owl-nav > button,
+.mod-article-list .owl-carousel .owl-nav > button,
+.acm-features.style-4 .owl-carousel .owl-nav > button {
+	transform: rotate(180deg);
+}
+
+html[dir="rtl"] {
+	// Fix Icon
+  .fa-angle-double-left:before {
+  	content: "\f101";
+  }
+
+  .fa-angle-left:before {
+  	content: "\f105";
+  }
+
+  .fa-angle-double-right:before {
+  	content: "\f100";
+  }
+
+  .fa-angle-right:before {
+  	content: "\f104";
+  }
+}
+
+.owl-stage-outer {
+	direction: ltr;
+
+	.owl-stage {
+		direction: rtl;
+	}
+}
+
+.acym_module td.acysubbuttons:before {
+	content: "\f060";
+}
+
+.profile-edit {
+  .control-group {
+    .col-sm-9 {
+      text-align: right;
+    }
+  }
+}

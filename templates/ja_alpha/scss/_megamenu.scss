@@ -1,0 +1,224 @@
+// EXTEND STYLE IN BASE
+// --------------------
+@import "../../../plugins/system/t4/themes/base/scss/megamenu";
+
+.t4-megamenu {
+  justify-content: center;
+  // THE MEGAMENU
+  //--------------------------------------------
+  .navbar-nav {
+    > li {
+
+      > a,
+      > .nav-link {
+        align-items: center;
+        display: flex;
+        font-size: 17px;
+        font-weight: 600;
+        padding-left: 24px;
+        padding-right: 24px;
+        min-height: $nav-link-height;
+
+        @include media-breakpoint-down(xl) {
+          padding-left: $grid-gutter-width / 2;
+          padding-right: $grid-gutter-width / 2;
+        }
+
+        .item-caret.item-caret {
+          border-top-color: $navbar-light-color;
+        }
+      }
+
+      // Parent focus
+      &.show {
+        > a, > .nav-link {
+          color: $navbar-light-hover-color;
+        }
+      }
+
+      // Active item
+      &.active {
+        > a,
+        > .nav-link {
+          position: relative;
+        }
+      }
+
+      &:last-child {
+        > a,
+        > .nav-link {
+          border: 0;
+        }
+      }
+    }
+  }
+
+  .mega-caption {
+    position: absolute;
+    bottom: 25px;
+    font-size: $h6-font-size;
+    white-space: nowrap;
+  }
+
+  .row+.row {
+    border-top: 0;
+  }
+
+  // Dropdown menu
+  .dropdown-menu {
+    background: $dropdown-bg;
+    border-radius: 0;
+    border: 0;
+    min-width: $dropdown-min-width;
+    margin-top: 0;
+    padding: $spacer $spacer * 2;
+
+    @include media-breakpoint-up(lg) {
+      background: $dropdown-bg;
+      box-shadow: 0 0 0 1px rgba(0,0,0,0.1);
+    }
+
+    li {
+      &:last-child {
+        border: 0;
+      }
+
+      > a,
+      > .nav-link,
+      .dropdown-item {
+        color: $dropdown-link-color;
+        padding: $navbar-padding-y/1.5 $navbar-padding-x;
+
+        &:hover, &:focus, &:active {
+          background-color: transparent;
+         
+        }
+      }
+
+      &.active {
+        > a {
+          color: $link-hover-color;
+        }
+      }
+    }
+  }
+
+  // Parent hover
+  .parent {
+  }
+
+  .dropdown-toggle {
+    &:after {
+      margin-top: $spacer/2;
+      float: right;
+    }
+  }
+
+  .dropdown {
+    &:hover {
+      > .dropdown-menu {
+      }
+    }
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .mega-col-nav {
+    .mega-col-title {
+      border: 0;
+      color: $headings-color;
+      font-size: 19px;
+      font-weight: 700;
+      margin-bottom: $grid-gutter-width / 4;
+      margin-top: 0;
+
+      span {
+        border: 0;
+        padding-bottom: $spacer / 4;
+        margin-top: 0;
+        padding-top: 0;
+      }
+    }
+  }
+
+  .mega-inner {
+
+    .mega-nav {
+      li {
+        > a {
+          font-weight: 600;
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
+    }
+
+    .navbar {
+      padding: 0;
+
+      .navbar-nav {
+        flex-direction: column;
+      }
+
+      li {
+        display: block;
+
+        a {
+          padding: 0;
+          font-size: $font-size-base;
+          text-transform: none;
+        }
+      }
+    }
+
+    .latestnews li a {
+      padding: 0;
+    }
+
+    .navbar-nav {
+      li {
+        + li {
+          margin-top: $grid-gutter-width / 2;
+        }
+
+        > a,
+        > span {
+          display: inline-block;
+          line-height: inherit;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+
+  // Modules in Megamenu
+  // -------------------
+  .t4-module {
+    border-radius: 0;
+    border: 0;
+  }
+
+  .t4-module .module-inner {
+  }
+
+  .mega-features {
+    .mega-nav {
+      > li {
+        > a {
+          &:before {
+            content: "+";
+            margin-right: $spacer / 4;
+            position: relative;
+            top: -2px;
+          }
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,225 @@
+// Function, variables
+@import "../vars";
+
+// Theme Customize
+@import "../../../../plugins/system/t4/themes/base/scss/theme.tpl";
+
+// COLOR PRIMARY
+#t4-header-wrap .link-primary,
+.link-primary {
+	color: __color_primary!important;
+
+	&:hover,&:focus,&:active {
+		color: __color_primary!important;
+		text-decoration: underline;
+	}
+}
+
+.bg-primary {
+	background-color: var(--color-primary) !important;
+}
+
+blockquote {
+	background: var(--primary_light);
+	border-left: 2px solid __color_primary;
+}
+
+ul.features-list li:before,
+.description ul li:before,
+.categories-portfolio li.active > a,
+.info-detail a,
+.acym_module td.acysubbuttons,
+.categories-module > li.active > h4 > a,
+.acm-features.style-3 .features-link.active h4,
+.article-index .active > a {
+	color: __color_primary!important;
+}
+
+.t4-section.decor:before {
+	background: __color_primary;
+}
+
+.btn-link {
+	color: #2E2E2E;
+
+	&:hover,&:focus,&:active {
+		color: __color_primary;
+	}
+}
+
+// Link Hover
+.readmore .btn,
+.icons .dropdown-menu a,
+.items-more .nav-tabs > li > a,
+.latestnews li a,
+.com-tags-tag.tag-category .list-group .list-group-item a,
+.categories-portfolio li a,
+.mod-articles-category-title,
+.link-dark,
+.login-wrap .other-links ul li a,
+.page-header h2 a,
+.categories-list h2 a,
+.categories-module > li a  {
+	&:hover,&:focus,&:active {
+		color: __color_primary!important;
+	}
+}
+
+// Dropdonw menu
+.t4-megamenu .dropdown-menu {
+	background: var(--primary_light);
+}
+
+.dropdown-menu {
+	background: var(--primary_light);
+
+	li {
+		> a,
+		> span {
+			&:hover,&:focus,&:active {
+				color: __color_primary!important;
+			}
+		}
+	}
+
+	li {
+		&.active,
+		&.open {
+			> a,
+			> span {
+				color: __color_primary!important;
+			}
+		}
+	}
+}
+
+.category-name a {
+	background: __color_primary;
+	color: #fff;
+
+	&:hover,&:focus,&:active {
+		background: var(--body-link-hover-color);
+	}
+}
+
+// Buttons Colors
+@each $color, $value in $theme-colors {
+  .btn.btn-outline-#{$color}:hover {
+    color: #fff !important;
+  }
+}
+
+// Patern Colors
+.bg-primary-light {
+	background-color: var(--primary_light);
+}
+
+.mod-light {
+	background-color: var(--primary_light);
+
+	.module-title span {
+		color: __color_primary!important;
+	}
+}
+
+// Background Color
+.contact .contact-address .fa,
+.play-icon a {
+	background: __color_primary;
+}
+
+#back-to-top {
+	&:hover,&:focus,&:active {
+		background: __color_primary;
+	}
+}
+
+// pagination
+.pagination .page-link,
+.pagination .pagenav,
+.pagenav li a {
+	background: var(--primary_light);
+	border-color: var(--primary_light);
+	color: __color_primary;
+
+	&:hover {
+		background: __color_primary;
+		border-color: __color_primary;
+		color: #fff;
+	}
+}
+
+.pagination .page-link {
+	&:hover {
+		background: __color_primary;
+		border-color: __color_primary;
+		color: #fff;
+	}
+}
+
+.pagination .page-item.active .page-link,
+div.t4-wrapper .counter {
+	background: __color_primary;
+	border-color: __color_primary;
+	color: #fff;
+}
+
+// Navbar on Sidebar
+div[class*="sidebar-"] .navbar .navbar-nav > li,
+div[class^="sidebar-"] .navbar .navbar-nav > li {
+	&.current {
+		> a {
+			color: __color_primary;
+		}
+	}
+
+	> a {
+		&:hover,&:focus,&:active {
+			color: __color_primary;
+		}
+	}
+}
+
+// Owl Style
+.mod-article-list .owl-carousel .owl-nav > button:not(.disabled),
+.acm-features.style-4 .owl-carousel .owl-nav > button:not(.disabled),
+.acm-testimonial.style-1 .owl-carousel .owl-nav > button:not(.disabled) {
+	&:hover {
+		background-color: __color_primary!important;
+	}
+}
+
+.owl-carousel .owl-dots .owl-dot.active {
+	border-color: __color_primary;
+}
+
+// ACM STYLE
+.acm-features{
+	&.style-2 {
+		.features-item:hover:before {
+			background: var(--primary_light);
+			color: __color_primary;
+		}
+
+		.features-item .action {
+			background: var(--primary_light);
+			color: __color_primary;
+		}
+	}
+
+	&.style-4 .features-item:before {
+		background: __color_primary;
+	}
+
+	&.style-5 .features-image .features-item-wrap .features-item:nth-child(2n+1) .bg-decor {
+		background: __color_primary;
+	}
+}
+
+.features-link {
+	&:hover,&:focus,&:active {
+		h4 {
+			color: __color_primary;
+		}
+	}
+}

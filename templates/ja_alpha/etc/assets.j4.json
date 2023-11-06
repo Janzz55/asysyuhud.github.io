@@ -1,0 +1,39 @@
+{
+  "name": "ja template",
+  "version": "1.0.0",
+  "description": "Assets builtin T4 Base",
+  "license": "GPL-2.0+",
+  "assets": [
+  {
+    "name": "ekko-lightbox",
+    "type": "script",
+    "uri": "templates/ja_alpha/js/ekko-lightbox.js"
+  },
+  {
+    "name": "html5lightbox",
+    "type": "script",
+    "uri": "templates/ja_alpha/js/html5lightbox/html5lightbox.js"
+  },
+  {
+    "name": "js.imagesloaded",
+    "type": "script",
+    "dependencies": ["jquery"],
+    "uri": "templates/ja_alpha/js/imagesloaded.pkgd.min.js"
+  },
+  {
+    "name": "js.isotope",
+    "type": "script",
+    "dependencies": ["js.imagesloaded"],
+    "uri": "templates/ja_alpha/js/isotope.pkgd.min.js"
+  },
+  {
+    "name": "js.owlcarousel",
+    "type": "style",
+    "uri": "templates/ja_alpha/js/owl-carousel/owl.carousel.min.css"
+  },
+  {
+    "name": "js.owlcarousel",
+    "type": "script",
+    "uri": "templates/ja_alpha/js/owl-carousel/owl.carousel.min.js"
+  }]
+}

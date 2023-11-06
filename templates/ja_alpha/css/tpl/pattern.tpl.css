@@ -1,0 +1,55 @@
+/*MAIN NAV*/
+.__class .navbar-nav > li > a {
+	color: __link_color!important;
+}
+
+.__class .navbar-nav > li.active > a,
+.__class .navbar-nav > li.show > a,
+.__class .navbar-nav > li > a:hover,
+.__class .navbar-nav > li > a:focus,
+.__class .navbar-nav > li > a:active {
+	color: __link_hover_color!important;
+}
+
+.__class .navbar-nav > li > a .item-caret {
+	border-top-color: __link_color!important;
+}
+
+.__class .navbar-nav > li.active > a .item-caret,
+.__class .navbar-nav > li.show > a .item-caret,
+.__class .navbar-nav > li > a:hover .item-caret,
+.__class .navbar-nav > li > a:focus .item-caret,
+.__class .navbar-nav > li > a:active .item-caret {
+	border-top-color: __link_hover_color!important;
+}
+/*MAIN NAV*/
+
+/*PATTERN DARK*/
+.__class {
+	background: __background_color;
+	color: __text_color;
+}
+
+.__class  .module-title span {
+	color: __text_color;
+}
+
+.__class h3 {
+	color: __text_color;
+}
+
+.__class a {
+	color: __link_color!important;
+}
+
+.__class a:hover,
+.__class a:focus,
+.__class a:active {
+	color: __link_hover_color!important;
+}
+
+.__class .logo-footer:before,
+.__class .module-title:before {
+	opacity: 0.07;
+}
+/*PATTERN DARK*/

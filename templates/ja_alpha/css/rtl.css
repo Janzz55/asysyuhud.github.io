@@ -1,0 +1,38 @@
+/**
+ *------------------------------------------------------------------------------
+ * @package       T4_Blank - Free Template for Joomla!
+ *------------------------------------------------------------------------------
+ * @copyright     Copyright (C) 2004-2019 JoomlArt.com. All Rights Reserved.
+ * @license       GNU General Public License version 2 or later; see LICENSE.txt
+ * @authors       JoomlArt
+ *------------------------------------------------------------------------------
+**/
+.acm-testimonial.style-1 .owl-carousel .owl-nav > button,
+.mod-article-list .owl-carousel .owl-nav > button,
+.acm-features.style-4 .owl-carousel .owl-nav > button {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg); }
+
+html[dir="rtl"] .fa-angle-double-left:before {
+  content: "\f101"; }
+
+html[dir="rtl"] .fa-angle-left:before {
+  content: "\f105"; }
+
+html[dir="rtl"] .fa-angle-double-right:before {
+  content: "\f100"; }
+
+html[dir="rtl"] .fa-angle-right:before {
+  content: "\f104"; }
+
+.owl-stage-outer {
+  direction: ltr; }
+  .owl-stage-outer .owl-stage {
+    direction: rtl; }
+
+.acym_module td.acysubbuttons:before {
+  content: "\f060"; }
+
+.profile-edit .control-group .col-sm-9 {
+  text-align: right; }
